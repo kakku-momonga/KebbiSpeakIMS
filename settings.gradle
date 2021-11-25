@@ -1,0 +1,5 @@
+rootProject.name = "KebbiSpeakIMS"
+include ':app'
+include ':epaapi-release'
+include ':imsif-release'
+include ':ui-release'

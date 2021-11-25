@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<iflink>
+    <language name="jp">
+        <device
+            name="Kebbiが話す"
+            dataitem="sample"
+            icon="kebbispeakdevice.png"
+            key="devicename"
+            value="KebbiSpeakIMSDevice">
+
+            <then>
+                <condition
+                    name="ケビーが話す"
+                    icon="notification.png"
+                    interface="sample"
+                    key="control"
+                    value="kebbispeakdevice">
+                    <property
+                        name="話す言葉"
+                        datatype="string"
+                        default="0"
+                        key="kebbi_speak_job_key"
+                        type="text" />
+                </condition>
+            </then>
+        </device>
+    </language>
+    <language name="en">
+        <device
+            name="KebbiSpeakIMSDevice"
+            dataitem="sample"
+            icon="kebbispeakdevice.png"
+            key="devicename"
+            value="KebbiSpeakIMSDevice">
+
+            <then>
+                <condition
+                    name="kebbi speak"
+                    icon="notification.png"
+                    interface="sample"
+                    key="control"
+                    value="kebbispeakdevice">
+                    <property
+                        name="sentence"
+                        datatype="string"
+                        key="kebbi_speak_job_key"
+                        type="text" />
+                </condition>
+            </then>
+        </device>
+    </language>
+
+</iflink>
